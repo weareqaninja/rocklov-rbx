@@ -36,3 +36,4 @@ Login Session
 
     Start Session
     Login With       ${email}    ${password}
+    User Should Be Logged In
