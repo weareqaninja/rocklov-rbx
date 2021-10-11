@@ -6,6 +6,8 @@ pipeline {
     stages {
         stage('Preparation') {
             steps {
+                sh 'curl -fsSL https://deb.nodesource.com/setup_14.x | bash -'
+                sh 'apt-get install -y nodejs'
                 sh 'pip install -r requirements.txt'
             }
         }
